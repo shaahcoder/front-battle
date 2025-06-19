@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Battle 2.0</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- JS Star Background Canvas -->
+  <canvas id="star-canvas"></canvas>
+
+  <!-- Loader -->
+  <div id="loader">
+    <video autoplay muted loop playsinline class="loader-video">
+      <source src="assets/loader.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar fade-in">
+    <div class="nav-brand">Frontend Battle</div>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#media">Gallery</a></li>
+      <li><a href="#footer">Contact</a></li>
+      <li><button id="theme-toggle" class="btn-animated">🌙</button></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero" class="hero fade-in">
+    <h1>Welcome to Frontend Battle</h1>
+    <p>Replicate. Innovate. Win.</p>
+    <button class="btn-primary">Get Started</button>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="features fade-in">
+    <h2>Top Features</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>🌗 Theme Toggle</h3>
+        <p>Switch between dark and light modes using the moon/ sun icon in the top-right corner of the navbar.</p>
+      </div>
+      <div class="card">
+        <h3>🔁 Custom Loader</h3>
+        <p>Full-screen loader animation plays for 1.5 seconds on page load using a custom video.</p>
+      </div>
+      <div class="card">
+        <h3>🎥 Embedded Video</h3>
+        <p>The gallery includes a clean, responsive video player for rich media presentation.</p>
+      </div>
+      <div class="card">
+        <h3>🖼️ Image Display</h3>
+        <p>Styled image with spacing, shadows, and animation — enhancing visual storytelling.</p>
+      </div>
+      <div class="card">
+        <h3>🎯 Animated Buttons</h3>
+        <p>Buttons animate on hover with scaling and shadows, improving interactivity and feedback.</p>
+      </div>
+      <div class="card">
+        <h3>📥 Email Input</h3>
+        <input
+          type="email"
+          placeholder="Enter your email"
+          style="padding: 0.5rem; width: 100%; border-radius: 8px; border: 1px solid #ccc; margin-top: 0.5rem;"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="media" class="media fade-in">
+    <h2>Gallery</h2>
+    <img src="assets/graph.png" alt="Graph" />
+    <video controls src="assets/customer-section.mp4"></video>
+  </section>
+
+  <!-- Footer with Contact Form -->
+  <footer id="footer" class="fade-in">
+    <h2>Contact Us</h2>
+    <form class="contact-form" action="https://formspree.io/f/mldnlybp" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="_replyto" placeholder="Your Email" required />
+      <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+    <p>&copy; 2025 Frontend Battle. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
