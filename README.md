@@ -6,8 +6,7 @@ A responsive, immersive frontend project built for the **Frontend Battle** compe
 
 ## 🚀 Live Demo
 
-**[👉 View the Website](https://yourusername.github.io/project-folder)**  
-> *(Replace with your actual GitHub Pages link after deploying)*
+**[👉 View the Website](https://shaahcoder.github.io/front-battle/)**  
 
 ---
 
